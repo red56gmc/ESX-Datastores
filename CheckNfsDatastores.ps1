@@ -13,7 +13,7 @@ foreach($esx in $esxhosts)
   if ($nfs | Where-Object Name -eq $target)
   {Write-Host "NFS datastore $target exists on host $esx" -ForegroundColor Green}
   else
-  {Write-Host "NFS datastore $target does not exist on host $esx" -ForegroundColor Red
-  Write-Host “NFS datastore $target is being added on host $esx” -ForegroundColor Yellow}
+  {Write-Host "NFS datastore $target does not exist on host $esx" -ForegroundColor Red}
+#  Write-Host “NFS datastore $target is being added on host $esx” -ForegroundColor Yellow}
   }
 }
